@@ -16,8 +16,8 @@ attorney for professional legal advice regarding your specific situation.
 """)
 
 # Check for API key
-if not os.getenv("GEMINI_API_KEY") and not ai_service.API_KEY:
-    st.warning("⚠️ GEMINI_API_KEY is not set. Please set it in your .env file or environment variables to use Lex.")
+if not ai_service.API_KEY:
+    st.warning("⚠️ GEMINI_API_KEY is not set. Please add it to your Streamlit App Secrets.")
 
 # File Uploader
 st.sidebar.header("1. Upload Document")

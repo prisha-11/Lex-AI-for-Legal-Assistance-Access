@@ -1,10 +1,17 @@
 import os
+import streamlit as st
 import google.generativeai as genai
 from dotenv import load_dotenv
 
 load_dotenv()
 
 API_KEY = os.getenv("GEMINI_API_KEY")
+if not API_KEY:
+    try:
+        API_KEY = st.secrets["GEMINI_API_KEY"]
+    except:
+        pass
+
 if API_KEY:
     genai.configure(api_key=API_KEY)
 
