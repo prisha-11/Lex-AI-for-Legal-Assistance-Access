@@ -1,0 +1,20 @@
+﻿NON-DISCLOSURE AGREEMENT
+
+This Non-Disclosure Agreement (the "Agreement") is entered into by and between Acme Corp ("Disclosing Party") and the undersigned individual ("Receiving Party").
+
+1. Confidential Information: "Confidential Information" means any information disclosed by Disclosing Party to Receiving Party, either directly or indirectly, in writing, orally or by inspection of tangible objects.
+
+2. Obligations: Receiving Party agrees to: (a) hold the Confidential Information in strict confidence; (b) not disclose it to any third party; and (c) not use it for any purpose other than to evaluate a potential business relationship with Disclosing Party.
+
+3. Duration: The obligations of Receiving Party under this Agreement shall survive for a period of five (5) years from the date of disclosure.
+
+4. Penalty for Breach: In the event of a breach of this Agreement by the Receiving Party, the Receiving Party shall be liable to pay the Disclosing Party a sum of ,000 as liquidated damages, in addition to any other remedies available at law.
+
+5. Non-Compete: Receiving Party agrees not to work for any competitor of Acme Corp for a period of two (2) years following the termination of any business relationship.
+
+Signatures:
+___________________________
+Disclosing Party
+
+___________________________
+Receiving Party
