@@ -5,15 +5,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_KEY = os.getenv("GEMINI_API_KEY")
-if not API_KEY:
-    try:
-        API_KEY = st.secrets["GEMINI_API_KEY"]
-    except:
-        pass
-
-if API_KEY:
-    genai.configure(api_key=API_KEY)
+def get_api_key():
+    key = os.getenv("GEMINI_API_KEY")
+    if not key:
+        try:
+            key = st.secrets["GEMINI_API_KEY"]
+        except:
+            pass
+    return key
 
 # Use a model with good reasoning capabilities for legal text
 MODEL_NAME = "gemini-3.5-flash" 
@@ -36,6 +35,9 @@ responses with headings and bullet points for readability.
 """
 
 def get_model():
+    key = get_api_key()
+    if key:
+        genai.configure(api_key=key)
     return genai.GenerativeModel(
         model_name=MODEL_NAME,
         system_instruction=SYSTEM_INSTRUCTION

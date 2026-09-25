@@ -16,7 +16,7 @@ attorney for professional legal advice regarding your specific situation.
 """)
 
 # Check for API key
-if not ai_service.API_KEY:
+if not ai_service.get_api_key():
     st.warning("⚠️ GEMINI_API_KEY is not set. Please add it to your Streamlit App Secrets.")
 
 # File Uploader
