@@ -15,7 +15,7 @@ def get_api_key():
     return key
 
 # Use a model with good reasoning capabilities for legal text
-MODEL_NAME = "gemini-3.5-flash" 
+MODEL_NAME = "gemini-3.5-flash-lite" 
 
 # System instruction to guide the model's behavior
 SYSTEM_INSTRUCTION = """
